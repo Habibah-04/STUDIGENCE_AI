@@ -26,6 +26,38 @@ init_db()
 ensure_extra_tables()
 apply_styles()
 
+# Fix dashboard navigation text wrapping
+st.markdown("""
+<style>
+/* Target only dashboard navigation cards */
+.st-key-dashboard_nav div[data-testid="stButton"] button {
+    height: auto !important;
+    min-height: 96px !important;
+    max-height: none !important;
+    width: 100% !important;
+    padding: 14px 10px !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+}
+
+/* Remove ellipsis and allow multiple lines */
+.st-key-dashboard_nav div[data-testid="stButton"] button p {
+    display: block !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    -webkit-line-clamp: unset !important;
+    max-height: none !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+    width: 100% !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 if "user" not in st.session_state:
     st.session_state.user = None
 if "page" not in st.session_state:

@@ -37,7 +37,6 @@ if "page" not in st.session_state:
 def auth_screen():
     st.markdown("<div style='height:2vh'></div>", unsafe_allow_html=True)
 
-    # HERO CARD: text on the left, RoboTutor GIF on the right
     with st.container(key="auth_hero"):
         left, right = st.columns(
             [1.15, 0.85],
@@ -55,8 +54,7 @@ def auth_screen():
                         STUDIGENCE AI
                     </div>
                     <div class="auth-brand-subtitle">
-                        Learn smarter. Practise better.
-                        Build your future with AI.
+                        Learn smarter & practise better with this Study Assistant.
                     </div>
                     <div class="auth-hero-description">
                         Your learning companion for understanding concepts,
@@ -80,7 +78,6 @@ def auth_screen():
                     "Please check assets/studigence_mascot.gif"
                 )
 
-    # AUTHENTICATION CARDS BELOW THE HERO
     login_col, signup_col = st.columns(2, gap="large")
 
     with login_col:
@@ -254,7 +251,6 @@ def render_module_cards():
                         unsafe_allow_html=True
                     )
 
-                    # Two square navigation cards per row
                     for start in range(0, len(items), 2):
                         pair = items[start:start + 2]
                         cols = st.columns(2, gap="small")
@@ -326,8 +322,6 @@ uid = user["id"]
 from src.db import get_profile
 from src.focus_tracker import start_session, heartbeat, new_session_id, start_sweeper
 
-# Start once per authenticated browser session. A background sweeper closes it
-# shortly after browser close/disconnect, using the last successful heartbeat.
 if not st.session_state.get("focus_session_id"):
     st.session_state.focus_session_id = new_session_id()
     start_session(uid, st.session_state.focus_session_id)

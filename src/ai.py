@@ -28,7 +28,7 @@ def _get_secret(name, default=""):
 
 
 API_KEY = _get_secret("GEMINI_API_KEY")
-MODEL = _get_secret("GEMINI_MODEL", "gemini-3.1-flash-lite")
+MODEL = _get_secret("GEMINI_MODEL", "gemini-3.5-flash-lite")
 
 client = genai.Client(api_key=API_KEY) if API_KEY else None
 

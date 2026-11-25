@@ -150,8 +150,6 @@ STUDIGENCE_AI/
 ```
 
 
-## Updated visual experience
+## Live 
 
-The current build uses the warm black, amber and gold visual theme, a split sign-in card with the animated graduation mascot, dashboard module tiles, and top-right profile controls. Navigation is on the dashboard; there is no separate sidebar.
-
-For API setup, copy `.env.example` to `.env` and add your own OpenAI API key locally. Never include `.env` in a ZIP, Git repository, screenshots, or messages.
+https://studigence-ai.streamlit.app/

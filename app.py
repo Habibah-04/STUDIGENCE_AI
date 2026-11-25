@@ -62,6 +62,29 @@ def auth_screen():
                         your future with AI.
                     </div>
                 </div>
+                
+/* Navigation cards: show complete text */
+div[data-testid="stButton"] > button {
+    height: auto !important;
+    min-height: 95px !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    padding: 14px 10px !important;
+}
+
+/* Allow button labels to wrap */
+div[data-testid="stButton"] > button p {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+    line-height: 1.4 !important;
+    text-align: center !important;
+    display: block !important;
+}
+
             """, unsafe_allow_html=True)
 
         with right:

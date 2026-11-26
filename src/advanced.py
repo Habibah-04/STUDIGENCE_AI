@@ -225,15 +225,9 @@ def tutor(uid):
                 with st.spinner('Preparing your explanation…'):
                     answer = _ai(prompt)
                 st.session_state['tutor_lesson'] = answer
-        if st.session_state.get('tutor_lesson'):
-            with st.container(key="ai_generated_notes"):
-               st.markdown(st.session_state['tutor_lesson'])
-
-            _download_text(
-                'Download explanation',
-                st.session_state['tutor_lesson'],
-                'studigence_lesson.txt'
-            )
+            if st.session_state.get('tutor_lesson'):
+                st.markdown(st.session_state['tutor_lesson'])
+                _download_text('Download explanation', st.session_state['tutor_lesson'], 'studigence_lesson.txt')
     with check_tab:
         topic = st.text_input('Topic you studied', key='understanding_topic')
         explanation = st.text_area('Explain the topic in your own words', height=150, key='understanding_text')

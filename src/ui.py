@@ -626,6 +626,76 @@ def apply_styles():
     border-radius: 12px !important;
 }
 
+
+/* =========================================
+   AI GENERATED STUDY NOTES - WARM ACADEMIA
+   ========================================= */
+
+.st-key-ai_generated_notes {
+    background: #FFFCF6 !important;
+    border: 1px solid #DCCDBB !important;
+    border-radius: 16px !important;
+    padding: 28px 32px !important;
+    margin: 18px 0 !important;
+    color: #493629 !important;
+}
+
+/* Main headings */
+.st-key-ai_generated_notes h1,
+.st-key-ai_generated_notes h2,
+.st-key-ai_generated_notes h3,
+.st-key-ai_generated_notes h4 {
+    color: #493629 !important;
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 750 !important;
+}
+
+/* Paragraphs and list items */
+.st-key-ai_generated_notes p,
+.st-key-ai_generated_notes li,
+.st-key-ai_generated_notes span {
+    color: #493629 !important;
+    line-height: 1.8 !important;
+}
+
+/* Important text */
+.st-key-ai_generated_notes strong {
+    color: #65452F !important;
+    font-weight: 750 !important;
+}
+
+/* Ordered and unordered lists */
+.st-key-ai_generated_notes ol,
+.st-key-ai_generated_notes ul {
+    padding-left: 25px !important;
+}
+
+/* Inline code */
+.st-key-ai_generated_notes code {
+    background: #F1E7D9 !important;
+    color: #754B30 !important;
+    border-radius: 4px;
+}
+
+/* Code blocks */
+.st-key-ai_generated_notes pre {
+    background: #F4EDE2 !important;
+    border: 1px solid #DCCDBB !important;
+    border-radius: 10px !important;
+    padding: 14px !important;
+}
+
+/* Horizontal separators */
+.st-key-ai_generated_notes hr {
+    border-color: #DCCDBB !important;
+}
+
+/* Links */
+.st-key-ai_generated_notes a {
+    color: #86583F !important;
+}
+
+
     </style>
     """, unsafe_allow_html=True)
 

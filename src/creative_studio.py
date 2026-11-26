@@ -166,7 +166,7 @@ def _make_pptx(title, slides):
 
 def creative_studio(uid):
     _header()
-    tabs=st.tabs(["🖼️ Image → PDF","🧩 AI Diagram","📄 PDF by Prompt","📊 PPT by Prompt","📷 Explain Notes Image"])
+    tabs=st.tabs(["Image → PDF","AI Diagram","PDF by Prompt","PPT by Prompt","Explain Notes Image"])
     with tabs[0]:
         st.subheader("Convert one or more images into a PDF")
         files=st.file_uploader("Choose images",type=["png","jpg","jpeg","webp","bmp"],accept_multiple_files=True,key="img_pdf")

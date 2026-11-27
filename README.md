@@ -336,7 +336,7 @@ Potential enhancements include:
 | Project Type | MCA Mini Project |
 | Student | Habibah Qamar |
 | Course | Master of Computer Applications |
-| Institute | KIPM – College of Management, Gorakhpur |
+| Institute | KIPM – College of Management, GIDA, Gorakhpur |
 | University | Dr. A.P.J. Abdul Kalam Technical University, Lucknow |
 | Academic Session | 2026–2027 |
 | Project Guide | Mr. Hrishikesh Tripathi |
